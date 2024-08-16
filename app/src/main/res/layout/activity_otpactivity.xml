@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/login_bg_ic"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Awesome, Thanks!"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/enterNumber"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/please_enter_the_OTP_sent_to_"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="end">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="-25dp"
+                    android:src="@drawable/bike_logo_ic"/>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="280dp"
+            android:layout_marginBottom="25dp"
+            app:cardBackgroundColor="#F5F5F5"
+            app:cardCornerRadius="15dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:cardBackgroundColor="@color/white"
+                        app:strokeColor="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:id="@+id/pinEdit1"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:background="@null"
+                                android:fontFamily="@font/montserrat"
+                                android:ems="1"
+                                android:textColor="@color/black"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:maxLength="1"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="2dp" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:orientation="horizontal"
+                        app:cardBackgroundColor="@color/white"
+                        app:strokeColor="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:background="@null"
+                                android:id="@+id/pinEdit2"
+                                android:ems="1"
+                                android:fontFamily="@font/montserrat"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:maxLength="1"
+                                android:textColor="@color/black"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="2dp" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:orientation="horizontal"
+                        app:cardBackgroundColor="@color/white"
+                        app:strokeColor="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:background="@null"
+                                android:ems="1"
+                                android:fontFamily="@font/montserrat"
+                                android:id="@+id/pinEdit3"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:maxLength="1"
+                                android:textColor="@color/black"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="2dp" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:orientation="horizontal"
+                        app:cardBackgroundColor="@color/white"
+                        app:strokeColor="@color/white">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <androidx.appcompat.widget.AppCompatEditText
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:background="@null"
+                                android:ems="1"
+                                android:fontFamily="@font/montserrat"
+                                android:id="@+id/pinEdit4"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:maxLength="1"
+                                android:textColor="@color/black"
+                                android:paddingHorizontal="10dp"
+                                android:paddingVertical="2dp" />
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/resendOTP"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardLogin"
+                    android:layout_width="260dp"
+                    android:layout_height="45dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="3dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/Continue"
+                        android:textColor="@color/white"
+                        android:textSize="17sp" />
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WinzerAdmin"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activitys.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.ContactUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.BankDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.KFCDocumentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.OrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.FaqsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.PrivacyPolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.TermsAndConditionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.AboutUsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.OpenTicketActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.DashBoardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentications.OTPActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentications.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

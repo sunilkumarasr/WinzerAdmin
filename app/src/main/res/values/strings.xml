@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Winzer Admin</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="we_will_send_an_OTP_your_mobile_number">We will send an OTP your mobile number</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="Iagreeto">I agree to </string>
+    <string name="TermsConditions">Terms &amp; Conditions</string>
+    <string name="please_enter_the_OTP_sent_to_">Please enter the OTP sent to </string>
+    <string name="resendOTP">Resend OTP</string>
+    <string name="Continue">Continue</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="Profile">Profile</string>
+    <string name="aboutus">About Us</string>
+    <string name="notifications">Notifications</string>
+    <string name="Faqs">Faq\'s</string>
+    <string name="addressbook">Address Book</string>
+    <string name="addressbookform">Address Book Form</string>
+    <string name="orders">Orders</string>
+    <string name="privacypolicy">Privacy Policy</string>
+    <string name="productDetails">Product Details</string>
+    <string name="orderDetails">Order Details</string>
+    <string name="contactus">Contact Us</string>
+    <string name="signout">Signout</string>
+    <string name="fullName">Full Name</string>
+    <string name="email">Email Id</string>
+    <string name="subject">Subject</string>
+    <string name="comment">Comment</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="ourproducts">Our Products</string>
+    <string name="submit">Submit</string>
+    <string name="addtocart">Add to Cart</string>
+    <string name="Add">Add</string>
+    <string name="cart">Cart</string>
+    <string name="NearByLocation">Near By Location</string>
+    <string name="location">Location</string>
+    <string name="noData">No Data Found</string>
+    <string name="placeOrder">Place Order</string>
+    <string name="paynow">Pay Now</string>
+    <string name="RECEIPT">RECEIPT</string>
+    <string name="Product_total">Product total</string>
+    <string name="Delivery_Charges">Delivery Charges</string>
+    <string name="Tax">Tax</string>
+    <string name="Total_Amount">Total Amount</string>
+    <string name="checkout">Check Out</string>
+    <string name="Order_Id">Order Id</string>
+    <string name="Date">Date</string>
+    <string name="Order_Status">Order Status</string>
+    <string name="Bill_Total">Bill Total</string>
+    <string name="Download_Invoice">Download Invoice</string>
+    <string name="Active_Orders">Active Orders</string>
+    <string name="Delivery_Orders">Delivery Orders</string>
+    <string name="Personal_Info">Personal Info</string>
+    <string name="KYC_Documents">KYC Documents</string>
+    <string name="Bank_Details">Bank Details</string>
+    <string name="About_Us">About Us</string>
+    <string name="Log_Out">Log Out</string>
+    <string name="Open_Ticket">Open Ticket</string>
+    <string name="Payment">Payment</string>
+    <string name="Cash_on_Delivery">Cash on Delivery</string>
+    <string name="contact_note">In any case of query please feel free to
+contact us</string>
+    <string name="note">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+</string>
+</resources>

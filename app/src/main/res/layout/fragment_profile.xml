@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/colorPrimary">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/profile_dummy_ic"
+                        app:civ_border_color="@color/white"
+                        app:civ_border_width="2dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/montserrat_semibold"
+                            android:text="K sunil"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Employee Id : 256822"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/call_white_ic"
+                                android:layout_gravity="center_vertical"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat"
+                                android:text="+91 9999 999999"
+                                android:layout_marginStart="10dp"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp">
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/location_marker_ic"
+                                android:layout_gravity="center_vertical"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/montserrat_medium"
+                                android:text="Hyderabad"
+                                android:layout_marginStart="10dp"
+                                android:textColor="@color/green" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Orders(21)"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/montserrat"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Edit Details"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/montserrat"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgEdit"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plus_ic"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp"
+                app:civ_circle_background_color="@color/selectedRed"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-25dp"/>
+
+            <LinearLayout
+                android:id="@+id/linearPersonalInfo"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_gray_edittext"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tic_ic"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Personal_Info"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montserrat"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/righrt_arrow"
+                    android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearKFCDocuments"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_gray_edittext"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tic_ic"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/KYC_Documents"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montserrat"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/righrt_arrow"
+                    android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearBankDetails"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_gray_edittext"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tic_ic"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Bank_Details"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montserrat"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/righrt_arrow"
+                    android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearAboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_gray_edittext"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tic_ic"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/About_Us"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montserrat"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/righrt_arrow"
+                    android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearTermsAndConditions"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_gray_edittext"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tic_ic"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/TermsConditions"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montserrat"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/righrt_arrow"
+                    android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_gray_edittext"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tic_ic"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/privacypolicy"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montserrat"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/righrt_arrow"
+                    android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearFaq"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_gray_edittext"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tic_ic"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Faqs"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montserrat"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/righrt_arrow"
+                    android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearContactUS"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_gray_edittext"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tic_ic"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/contactus"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montserrat"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/righrt_arrow"
+                    android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/round_gray_edittext"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center_vertical">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tic_ic"
+                    android:layout_marginStart="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Log_Out"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/montserrat"/>
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/righrt_arrow"
+                    android:layout_marginEnd="15dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</layout>

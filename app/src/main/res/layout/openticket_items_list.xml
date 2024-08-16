@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:strokeColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_semibold"
+                android:singleLine="true"
+                android:text="Adepu Nagesh"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Operator"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="12sp"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:text="Tuesday, February 6th, 2024"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="12sp"
+                    android:textColor="@color/txtdes"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:singleLine="true"
+                android:text="Dear Mittapalli Rajesh"
+                android:textSize="15sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/note"
+                android:maxLines="2"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="12sp"
+                android:textColor="@color/txtdes"/>
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/round_gray_edge"
+                android:layout_gravity="end"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open"
+                    android:textColor="@color/green"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/montserrat_medium"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
